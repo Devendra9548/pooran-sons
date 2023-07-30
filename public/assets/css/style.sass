@@ -1,0 +1,455 @@
+@font-face
+    font-family: OpenSans
+    src: url(../fonts/opensans-2.ttf)
+
+$logo-blue-color: #1664b1
+$logo-blue-hover-color: #3787d8
+$logo-green-color: #0ea378
+$logo-yellow-color: #ffd144
+$logo-black-color: #181717
+$logo-font-family: OpenSans
+
+@mixin all-paragraph
+    margin: 0px
+    padding: 0px
+    color: #000
+    font-family: OpenSans
+
+@mixin primary-button
+    background: $logo-blue-color
+    color: #fff
+    padding: 13px 20px
+    border-radius: 0px
+    text-decoration: none
+
+figcaption,a,p,li
+    font-family: $logo-font-family
+    color: $logo-black-color
+
+a:hover, .btn-primary:hover
+    text-decoration: none
+
+.product-btn
+    @include primary-button
+    color: #fff!important
+    border-radius: 20px!important
+    font-size: 14px!important
+
+.product-btn
+    &:hover
+        background: $logo-blue-hover-color
+
+input:focus-visible
+    outline: 0px!important
+
+.btn:focus
+    box-shadow: none!important
+
+ul
+    margin-bottom: 0px
+
+// header css
+
+#top-header
+    padding-top: 5px
+    padding-bottom: 5px
+
+.container-fluid
+    padding-left: 8%!important
+    padding-right: 8%!important
+    p,a
+        @include all-paragraph
+
+.top-social-clm
+    display: block
+    margin-top: auto
+    margin-bottom: auto
+
+.home-slider .slick-next
+    right: 20px
+
+.background-img
+    display: flex !important
+    height: 72vh!important
+    justify-content: center
+    align-items: center
+    background-size: cover
+    background-position: center center
+
+.bg-slider-content
+    p
+        margin-bottom: 12px
+        font-weight: 500
+    h2
+        font-size: 45px
+        font-weight: 600
+        margin-top: -10px
+
+    ul
+        padding-left: 22px
+        li
+            list-style-image: url('../img/check-mark.png')
+            margin-bottom: 8px
+    a
+        @include primary-button
+        position: relative
+        top: 20px
+        border-radius: 5px
+    a:hover
+        background: $logo-blue-hover-color
+
+.home-slider .slick-prev
+    left: 20px!important
+    z-index: 99!important
+
+#social-links
+    #header-social-icons
+        ul
+            a:hover
+                color: $logo-blue-color
+                text-decoration: none
+            li
+                border: 1px solid #fff
+                border-radius: 25px
+                list-style: none
+                display: inline-block
+                &:hover
+                    list-style: none
+                i
+                    font-size: 16px
+
+                a
+                    padding-left: 20px
+
+#main-header
+    #ask-any-question a
+        @include primary-button
+    #logo
+        padding: 15px 0px 15px 13px
+        display: flex
+        justify-content: left!important
+
+    #search-bar
+        display: flex
+        justify-content: center
+        align-items: center
+        form
+            width: 100%
+            text-align: center
+            input
+                width: 100%
+                padding: 10px 15px
+
+            #search-input
+                padding-right: 40px
+                border: 1px solid #0004
+                border-radius: 50px
+
+            #search-submit
+                width: 50px
+                position: absolute
+                right: 0px
+                z-index: 66
+                background: transparent
+                border: 0px solid
+                top: 1px
+            i
+                position: absolute
+                right: 13px
+                top: 15px
+
+#navbar
+    nav
+        padding: 12px 0px
+
+        ul
+            padding-left: 0px
+            li
+                display: inline-block
+                margin-left: 28px
+                font-weight: 600
+                a
+                    text-decoration: none
+
+#main-navbar
+    nav
+        padding: 12px 0px
+
+        ul
+            padding-left: 0px
+            li
+                display: inline-block
+                margin-right: 28px!important
+                font-weight: 600
+                a
+                    text-decoration: none
+
+
+// Footer CSS
+
+footer
+    #top-header
+        background: $logo-black-color
+        padding: 70px 0px
+        margin-top: 0px
+        .foot-clm
+            text-align: center
+        .ft-main-heading
+            color: #fff
+            font-size: 26px
+            font-weight: 600
+            margin-bottom: 20px
+        p
+            color: #dfdfdf
+            margin-bottom: 10px
+        a
+            color: #dfdfdf
+        nav
+            ul
+                margin: 0px
+                padding: 0px
+                li
+                    display: inline
+                    list-style: none
+                    line-height: 35px
+                    color: #dfdfdf
+
+        form
+            margin-top: 20px
+            input.email
+                width: 66%
+                border: 1px solid #000
+                border-radius: 0px
+                padding: 10px 15px 10px 15px
+                font-size: 14px
+
+        #subscribe
+            @include primary-button
+            padding: 10px 14px
+            border: 0px
+            font-size: 14px
+            position: relative
+            left: -10px
+    #foot-social-icons
+        margin-top: 15px
+        ul
+            display: flex
+            justify-content: center
+            align-items: center
+        li
+            display: block!important
+            width: 35px
+            height: 35px
+            border: 1px solid #fff
+            margin: 6px
+            border-radius: 25px
+            &:hover
+                background: $logo-blue-color
+                border-color: $logo-blue-color
+
+    #bottom-footer
+        background: $logo-black-color
+        padding: 10px 0px
+        border-top: 1px solid #464646
+        p
+            color: #fff
+
+/* Hero Section */
+.carousel-caption
+    top: 18% !important
+    left: 0% !important
+    padding-left: 8%!important
+    display: block !important
+    width: 660px !important
+    text-align: left !important
+
+    h2
+        color: #000000
+        font-size: 40px
+    p
+        color: #393838
+        font-size: 16px
+        font-family: $logo-font-family
+        margin-top: 10px
+
+.ct-btn-hero
+    background: transparent
+    border: 1px solid #000!important
+    color: #000!important
+    padding: 12px 25px
+    margin-top: 10px
+
+.carousel-control-prev
+    width: 50px
+    z-index: 100
+.carousel-control-next
+    width: 50px
+
+// First Section CSS
+
+.main-heading p
+    font-size: 15px
+
+.shop-by-imgs
+    figure
+        .img-div
+            border-radius: 100%
+            overflow: hidden
+            img
+                border-radius: 100%
+                transition: all 0.5s ease-in-out
+                &:hover
+                    transform: scale(1.2)
+                    transition: all 0.5s ease-in-out
+                    cursor: pointer
+        figcaption
+            text-align: center!important
+            margin-top: 10px
+            font-weight: 600
+            color: #000
+            font-size: 15px
+
+// Second section
+
+.third-section
+    figure
+        position: relative
+        .img-div
+            position: relative
+            &:hover img
+                position: relative
+                transform: translate(-100px 0px)
+
+        figcaption
+            position: absolute
+            top: 0px
+            z-index: 3
+            left: 6%
+            top: 6%
+
+.third-section
+    figcaption
+        p
+            color: #fff
+            font-weight: 600
+        h2
+            width: 222px
+            color: #fff
+            font-weight: 600
+            font-size: 28px
+        a
+            color: #fff
+            padding: 8px 20px!important
+            border: 2px solid #fff!important
+            border-radius: 20px!important
+            position: relative
+            top: 15px
+
+// Third Section
+
+.listing-section-row
+    a
+        font-size: 28px
+        font-weight: 600
+
+// Fourth Section
+
+.deal-of-the-day-bg
+    background-image: url('/assets/img/17.jpg')
+    height: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+.deal-of-the-day-bg
+    .media-body
+        padding-top: 45px
+        padding-left: 45px
+        h4
+            font-size: 32px
+            font-weight: 700
+            margin-bottom: 10px
+        p
+            padding-right: 50%
+            margin-bottom: 10px
+        #timersCount
+            letter-spacing: 1px
+            font-size: 30px
+            font-weight: 600
+            color: #292828
+        a
+            background: transparent
+            border: 2px solid #000
+            border-radius: 25px
+            &:hover
+                background: $logo-blue-color
+                border-color: $logo-blue-color
+
+// Blog section
+
+.blog
+    .card-title
+        font-size: 18px
+        font-weight: 600 !important
+        line-height: 25px
+
+// Star Rating section
+
+.slick-prev:before, .slick-next:before
+    font-family: 'slick'
+    font-size: 20px
+    line-height: 1
+    opacity: .75
+    color: #000!important
+
+.slick-container
+    border: 1px solid #0003
+    background: #fff
+    padding: 30px
+    padding-top: 10px
+    margin: 12px
+    transition: all 0.6s ease-in-out
+    position: relative
+    top: 0px
+    cursor: pointer
+    &:hover
+        position: relative
+        transition: all 0.6s ease-in-out
+        top: -10px
+    h4
+        font-size: 20px
+
+.content-media p
+    font-size: 18x
+    font-family: $logo-font-family
+
+#star-review .get-started-today
+    @include primary-button
+    border-radius: 25px
+
+// high-Lighted
+
+#high-Lighted
+    h2
+        font-size: 60px
+        font-weight: 700
+        color: $logo-black-color
+        text-align: left
+    p
+        text-align: left
+        font-size: 18px
+    a
+        @include primary-button
+        border-radius: 25px
+
+//  About Us Page CSS
+
+@media only screen and (max-width: 1280px)
+    .container-fluid
+        padding-left: 5%!important
+        padding-right: 5%!important
+
+    .carousel-caption
+        top: 18% !important
+        left: 0% !important
+        padding-left: 5%!important

@@ -1,0 +1,36 @@
+
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+.container-fluid{
+padding-left: 8%!important;
+padding-right: 8%!important;
+}
+
+#social-links{
+	display: flex;
+	justify-content: right;
+}
+
+#social-links a{
+	margin-left: 10px;
+}
+
+#social-links a i{
+	font-size: 22px;
+}
+
+#main-header{
+background: #f6f6f6;
+}
+
+
+@media only screen and (max-width: 1280px){
+	.container-fluid{
+        padding-left: 5%!important;
+        padding-right: 5%!important;
+}
+}

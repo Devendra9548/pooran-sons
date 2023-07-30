@@ -1,0 +1,34 @@
+.faq li {
+    padding: 20px;
+
+}
+
+.faq .q 
+{
+    font-weight: 500;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.faq li.a {
+    background: #3BB0D6;
+    display: none;
+    color: #fff;
+}
+
+.faq li.q i {
+    float: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq li.q.rotate i::before {
+    content: "\f068";
+    /* Cross icon */
+}
+
+.faq li.q i::before {
+    content: "\f067";
+    /* Plus icon */
+}

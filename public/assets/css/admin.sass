@@ -1,0 +1,53 @@
+@font-face
+    font-family: OpenSans
+    src: url(../fonts/opensans-2.ttf)
+
+$logo-blue-color: #1664b1
+$logo-blue-hover-color: #3787d8
+$logo-green-color: #0ea378
+$logo-yellow-color: #ffd144
+$logo-black-color: #181717
+$logo-font-family: OpenSans
+
+@mixin all-paragraph
+    margin: 0px
+    padding: 0px
+    color: #000
+    font-family: OpenSans
+
+@mixin primary-button
+    background: $logo-blue-color
+    color: #fff
+    padding: 13px 20px
+    border-radius: 0px
+    text-decoration: none
+
+a
+    color: #fff!important
+
+li
+    list-style: none
+
+.left-sidebar
+    background: #4e73df
+.admin-navbar
+    ul
+
+        li
+            padding: 15px 25px
+            &:hover
+                background: $logo-blue-color
+            &.active
+                background: $logo-blue-color
+
+            a
+                i
+                    font-size: 16px
+                    width: 35px
+            ul
+                margin-top: 10px
+                
+                &:hover
+                    display: block !important
+                li
+                    padding: 5px 0px

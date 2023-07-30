@@ -1,0 +1,38 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/opensans-2.ttf);
+}
+a {
+  color: #fff !important;
+}
+
+li {
+  list-style: none;
+}
+
+.left-sidebar {
+  background: #4e73df;
+}
+
+.admin-navbar ul li {
+  padding: 15px 25px;
+}
+.admin-navbar ul li:hover {
+  background: #1664b1;
+}
+.admin-navbar ul li.active {
+  background: #1664b1;
+}
+.admin-navbar ul li a i {
+  font-size: 16px;
+  width: 35px;
+}
+.admin-navbar ul li ul {
+  margin-top: 10px;
+}
+.admin-navbar ul li ul:hover {
+  display: block !important;
+}
+.admin-navbar ul li ul li {
+  padding: 5px 0px;
+}/*# sourceMappingURL=admin.css.map */
